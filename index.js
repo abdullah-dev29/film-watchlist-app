@@ -32,7 +32,7 @@ async function handleBtnClick() {
       if(!alreadyExists) {
         for(const newFilm of data) {
           if(newFilm.imdbID === imdbId) {
-            stored.push(newFilm)
+            stored.unshift(newFilm)
             break
           }
         }
